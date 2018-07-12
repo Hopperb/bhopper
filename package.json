@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node server/server.js",
-    "heroku-postbuild": "cd client && yarn run build"
+    "heroku-postbuild": "cd client && yarn build"
   },
   "engines": {
     "node": "8.11.3"
