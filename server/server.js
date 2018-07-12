@@ -5,6 +5,8 @@ const path       = require('path');
 const cors       = require('cors');
 const helmet     = require('helmet');
 
+require('dotenv').config()
+
 const server     = express();
 
 server.use(express.static(path.join(__dirname, 'build')));
