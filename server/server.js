@@ -4,10 +4,10 @@ const bodyParser = require('body-parser');
 
 const server     = express();
 
-server.use(express.json());
+server.use(express.static(path.join(__dirname, 'build')));
 
-server.get('/', (req, res) => {
-    res.status(200).json({api: 'up and running'})
+server.get('/*', (req, res) => {
+   res.sendFile(path.join(__dirname, 'build', 'index.html'))
 });
 
 
