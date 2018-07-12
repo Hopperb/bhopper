@@ -6,8 +6,7 @@
   "author": "Brandon Hopper <brandonhopper0@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node server/server.js",
-    "heroku-postbuild": "cd client && yarn build"
+    "start": "node server/server.js"
   },
   "engines": {
     "node": "8.11.3"
