@@ -14,7 +14,7 @@ export default class Example extends React.Component {
             <NavLink href="#">Work Experience</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#">GitHub</NavLink>
+            <NavLink href="https://www.github.com/Hopperb">GitHub</NavLink>
           </NavItem>
           <NavItem>
             <NavLink disabled href="#">Brandon Hopper FullStack Web Developer</NavLink>
