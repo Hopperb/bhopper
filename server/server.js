@@ -10,6 +10,17 @@ require('dotenv').config()
 
 const server     = express();
 
+var allowCrossDomain = function (req, res, next) {
+  res.header('Access-Control-Allow-Origin', "*");
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+  // dojo sends X-Requested-With and If-None-Match (for insert)
+  res.header('Access-Control-Allow-Headers', 'Content-Type, X-Requested-With, If-None-Match');
+
+  next();
+}
+
+server.use(allowCrossDomain);
+
 server.use(express.static(path.join(__dirname, 'client/build')));
 server.use(cors());
 server.use(helmet());
