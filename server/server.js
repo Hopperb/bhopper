@@ -14,14 +14,7 @@ server.use(express.static(path.join(__dirname, 'client/build')));
 server.use(cors());
 server.use(helmet());
 server.use(morgan('combined'))
-server.use(allowCrossDomain);
 
-const allowCrossDomain = function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', "*");
-    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
-    next();
-  }
 
 server.get('/', (req, res ) => {
     res.status(200).json({api: 'app and running'})

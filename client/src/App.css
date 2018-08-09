@@ -1,26 +1,26 @@
-.App {
+.container {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   max-width: 1200px;
   margin: 0 auto;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.nav {
+  display: flex;
 }
 
-.App-header {
-  background-color: whitesmoke;
-  height: 100px;
-  padding: 20px;
-  color: white;
+.active {
+  font-weight: bold;
 }
 
-.App-title {
-  font-size: 1.5em;
+.nav li {
+  margin-right: 15px;
 }
-
-.App-intro {
-  font-size: large;
+img{
+  width: 300px;
+  height: 300px;
+  margin: 0;
 }
-

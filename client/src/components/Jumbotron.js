@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import { Jumbotron, Button } from 'reactstrap';
 import PropTypes from 'prop-types';
 
@@ -6,12 +7,13 @@ const Jtron = (props) => {
   return (
     <div>
       <Jumbotron>
-        <h1 className="display-2">iCode!</h1>
-        <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
+        <h1 className="display-4">Brandon Hopper | Software Engineer</h1>
+        <img className="photo" src={require('../images/headshot1.jpg')} />
+        <p className="lead">I code and create with MERN stack technologies, Python, and C.</p>
         <hr className="my-2" />
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p>I'm always ready and looking to collab! So if you have a project in mind, lets work towards a solution together!</p>
         <p className="lead">
-          <Button color="primary">Learn More</Button>
+          <Link to='/about'><Button color="primary">Let's Connect!</Button></Link>
         </p>
       </Jumbotron>
     </div>
