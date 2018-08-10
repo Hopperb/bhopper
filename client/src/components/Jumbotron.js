@@ -8,7 +8,7 @@ const Jtron = (props) => {
     <div>
       <Jumbotron>
         <h1 className="display-4">Brandon Hopper | Software Engineer</h1>
-        <img className="photo" src={require('../images/headshot1.jpg')} />
+        <img className="photo" src={require('../images/headshot1.jpg')} alt="headshot1" />
         <p className="lead">I code and create with MERN stack technologies, Python, and C.</p>
         <hr className="my-2" />
         <p>I'm always ready and looking to collab! So if you have a project in mind, lets work towards a solution together!</p>

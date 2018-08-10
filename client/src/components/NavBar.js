@@ -15,8 +15,8 @@ function NavBar () {
             </NavLink>
         </li>
         <li>
-            <NavLink activeClassName='active' to='/experience'>
-                Experience
+            <NavLink activeClassName='active' to='/contact'>
+                Contact
             </NavLink>
         </li>
     </ul>
